@@ -1,7 +1,7 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "frontend",
   "version": "2.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "online shopping",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -70,7 +70,7 @@
       "./jest.setup.js"
     ]
   },
-  "//": "This is our babel config, I prefer this over a .babelrc file",
+  "//": "babel config",
   "babel": {
     "env": {
       "development": {
