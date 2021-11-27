@@ -8,7 +8,7 @@ import {
 } from "@keystone-next/keystone/session";
 
 const databaseURL =
-  process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits-tutorial";
+  process.env.DATABASE_URL || "mongodb://localhost/keystone-shoppy";
 
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
@@ -45,10 +45,9 @@ export default withAuth(
     }),
     ui: {
       // Show the UI only for poeple who pass this test
-      isAccessAllowed: ({ session }) => 
-        //console.log(session);
+      isAccessAllowed: ({ session }) =>
+        // console.log(session);
         !!session?.data,
-      }
     },
     session: withItemData(statelessSessions(sessionConfig), {
       // GraphQL Query
