@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.5.5",
     "@keystone-next/admin-ui": "^8.0.1",
     "@keystone-next/auth": "^14.0.0",
     "@keystone-next/cloudinary": "^2.0.9",
@@ -42,6 +43,7 @@
     "@keystonejs/server-side-graphql-client": "^1.1.2",
     "@types/nodemailer": "^6.4.0",
     "dotenv": "^8.2.0",
+    "graphql": "^15.7.2",
     "next": "^10.0.5",
     "nodemailer": "^6.4.17",
     "react": "^16.14.0",
