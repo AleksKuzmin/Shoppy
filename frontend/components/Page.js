@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   src: url('/static/radnikanext-medium-webfont.woff2');
   format('woff2');
   font-weight: normal;
-  font-style;
+  font-style: normal;
 
 }
     html {
@@ -57,7 +57,7 @@ const InnerStyles = styled.div`
   padding: 2rem;
 `;
 
-export default function Page({ children, cool }) {
+export default function Page({ children }) {
   return (
     <div>
       <GlobalStyles />
