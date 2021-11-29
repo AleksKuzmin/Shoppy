@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
 }
     html {
-      --red: #ff0000;
+      --blue: #0000FF;
       --black: #393939;
       --grey: #3A3A3A;
       --gray: var(--grey);
@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
       --maxWidth: 1000px;
       --bs: 0 12 px 24px 0 rgba(0,0,0, 0.09);
       box-sizing: border-box;
+      font-size: 62.5%;
     }
     *, *:::before, *:after  {
       box-sizing: inherit;
