@@ -2,9 +2,9 @@ import useForm from '../lib/useForm';
 
 export default function CreateProduct() {
   const { inputs, handleChange } = useForm({
-      name: 'Nice shoes',
-      price: 23433,
-      
+    name: 'Nice shoes',
+    price: 23433,
+    description: 'these are the best shoes',
   });
   return (
     <form>
@@ -19,20 +19,17 @@ export default function CreateProduct() {
           onChange={handleChange}
         />
       </label>
-      {/* <label htmlFor="name">
-        Name
+      <label htmlFor="price">
+        Price
         <input
-          type="text"
-          id="name"
-          name="name" 
-          placeholder="Name"
-          value={name}
-          onChange={(e) => {
-            console.log(e.target.value);
-            setName(e.target.value);
-          }}
+          type="number"
+          id="price"
+          name="price"
+          placeholder="price"
+          value={inputs.price}
+          onChange={handleChange}
         />
-      </label> */}
+      </label>
     </form>
   );
 }

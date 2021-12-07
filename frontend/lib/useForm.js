@@ -11,7 +11,7 @@ export default function useForm(initial = {}) {
   }
 
   return {
-      inputs,
-      handleChange()
-  }
+    inputs,
+    handleChange,
+  };
 }
